@@ -1,0 +1,118 @@
+.register_form_div{
+    height: 50vh;
+    display: flex;
+    /* border: 4px solid red; */
+    width: 50%;
+    flex-direction: column;
+    margin: 10rem auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.register_form_heading{
+    font-size: 4rem;
+    margin: 20rem 0rem 2rem 0rem;
+}
+
+.register_form_div .form_div{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    font-size: 4rem;
+    padding: 4rem;
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 60rem;
+    /* border: 3px solid burlywood; */
+}
+
+.register_form_div .form_div div{
+    display: flex;
+    text-align: center;
+    margin: 4rem;
+}
+
+.register_form_div .form_div div label{
+    /* border: 4px solid orange; */
+    text-align: center;
+    font-size: 2rem;
+    width: 30rem;
+}
+
+.register_form_div .form_div div input{
+    /* border: 4px solid orange; */
+    text-align: center;
+    font-size: 2rem;
+    width: 30rem;
+}
+
+
+.submitbtn{
+    border:4px solid green;
+    background-color: greenyellow;
+    border-radius: 10rem;
+    font-size: 2rem;
+    padding: 2rem;
+    text-align: center;
+    cursor: pointer;
+}
+.submitbtn:hover{
+    background-color: orange;
+    transform: scale(1.2,1.2);
+}
+
+.submitbtn:active{
+    background-color: blue;
+    transform: scale(0.9,0.9);
+}
+
+/* login */
+
+.login_form_div{
+    height: 50vh;
+    display: flex;
+    /* border: 4px solid red; */
+    width: 50%;
+    flex-direction: column;
+    margin: 10rem auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.login_form_heading{
+    font-size: 4rem;
+    margin: 5rem 0rem;
+}
+
+.login_form_div .form_div{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    font-size: 4rem;
+    padding: 4rem;
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: 3px solid burlywood; */
+}
+
+.login_form_div .form_div div{
+    display: flex;
+    text-align: center;
+    margin: 4rem;
+}
+
+.login_form_div .form_div div label{
+    /* border: 4px solid orange; */
+    text-align: center;
+    font-size: 2rem;
+    width: 30rem;
+}
+
+.login_form_div .form_div div input{
+    /* border: 4px solid orange; */
+    text-align: center;
+    font-size: 2rem;
+    width: 30rem;
+}

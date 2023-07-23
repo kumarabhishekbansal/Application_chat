@@ -1,0 +1,47 @@
+.main_navbar_div{
+    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.logo_navbar{
+    flex:1;
+}
+
+.navbar_content{
+    display: flex;
+    flex-direction: row;
+    flex:2;
+    /* border: 2px solid red; */
+}
+.navbar_content_lists{
+    /* border: 2px solid green; */
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.navbar_content_list{
+    border-radius: 10rem;
+    padding: 1rem;
+    font-size: 2.5rem;
+    cursor: pointer;
+    list-style-type: none;
+}
+
+
+.navbar_content_list:hover{
+    border-top: 4px solid brown;
+    border-bottom: 4px solid brown;
+}
+
+.navbar_content_list .nav_link{
+    color: black;
+    text-decoration: none;
+}
+
+.mail_icon{
+    font-size: 5rem !important;
+}
