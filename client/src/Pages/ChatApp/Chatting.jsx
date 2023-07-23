@@ -120,7 +120,7 @@ const Chatting = (props) => {
   };
 
   useEffect(() => {
-    socket.current = io("ws://localhost:8080");
+    socket.current = io("ws://https://chatting-91mt.onrender.com");
     socket.current.on("getMessage", (data) => {
       console.log("data :: ",data);
       setArrivalMessage({
