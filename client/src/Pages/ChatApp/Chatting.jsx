@@ -5,7 +5,7 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import axios from "axios";
 
-const ENDPOINT = "http://localhost:8080";
+const ENDPOINT = "https://chatting1.onrender.com";
 var socket, selectedChatCompare;
 const Chatting = (props) => {
   const socket = useRef();
