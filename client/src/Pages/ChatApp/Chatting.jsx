@@ -120,7 +120,9 @@ const Chatting = (props) => {
   };
 
   useEffect(() => {
-    socket.current = io("ws://https://chatting-91mt.onrender.com");
+    socket.current = io("ws://https://chatting-91mt.onrender.com",
+    { autoConnect: false, transports: ['websocket'] })
+    
     socket.current.on("getMessage", (data) => {
       console.log("data :: ",data);
       setArrivalMessage({

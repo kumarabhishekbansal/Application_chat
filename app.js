@@ -66,6 +66,7 @@ const io = require("socket.io")(server, {
     origin: ["https://chatting-91mt.onrender.com","http://localhost:3000"],
     credentials: true,
   },
+  method:["GET","POST"]
 });
 
 // io.on('connection',(socket)=>{
