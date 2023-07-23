@@ -13,6 +13,14 @@ const { notFound, errorHandler } = require("./middleware/errorMiddleware");
 
 
 const app = express();
+const PORT = process.env.PORT || 8080;
+const path=require("path");
+
+
+  app.use(express.static(path.join(__dirname, 'client', 'build')));
+  app.get('/*', (req, res) => {
+    res.sendFile(path.join(__dirname, 'client', 'build', 'index.html'));
+  })
 
 app.use(express.json()); // to accept json data
 app.use(CookieParser());
@@ -45,15 +53,8 @@ app.use(errorHandler);
 
 const User=require("./models/UserModel");
 
-const PORT = process.env.PORT || 8080;
-const path=require("path");
 
-if (process.env.NODE_ENV === 'production') {
-  app.use(express.static(path.join(__dirname, 'client', 'build')));
-  app.get('/*', (req, res) => {
-    res.sendFile(path.join(__dirname, 'client', 'build', 'index.html'));
-  })
-}
+
 
 const server=app.listen(PORT,()=>{
   console.log(`server is listenting at port no. ${PORT}`);
